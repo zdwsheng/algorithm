@@ -38,7 +38,8 @@ public class BinarySearch implements Serach {
 
             if (temp == target) {
                 return mid;
-            } else if (temp > target) {
+            }
+            if (temp > target) {
                 //减一 加一 是因为 下标为mid的就是temp 已经判断过了;如果target是array最右边界的，会死循环
                 right = mid - 1;
             } else {
