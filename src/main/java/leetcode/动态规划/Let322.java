@@ -41,7 +41,7 @@ package leetcode.动态规划;
  * @author: zdw
  * @date 2020/12/24 17:00
  */
-public class Let322 {
+public class Let322 extends DpBase {
 
     static int[] coins = new int[]{1, 3, 5};
 
@@ -52,8 +52,7 @@ public class Let322 {
         }
     }
 
-
-    private static int dp(int amount) {
+    protected static int dp(int amount) {
         //2.1如果刚好有解  amount-coin=0 ，返回0，subProblem可以+1
         if (amount == 0) {
             return 0;
