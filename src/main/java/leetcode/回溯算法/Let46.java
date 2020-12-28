@@ -74,6 +74,8 @@ public class Let46 {
             // 1.3  进入下一层决策树
             backtrack(nums, track);
             // 1.5 取消选择   到1.4之后，此条道路已经走到尽头，所以走回头路在选择
+            //i==3的时候，num[i]=4，执行track.removeLast(),然后i++,i==4 == num.length,for循环结束,
+            // 递归到上一层i==2,继续执行track.removeLast(),i++ ,i==3 < num.length,接着执行for循环
             track.removeLast();
         }
     }
