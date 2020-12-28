@@ -28,7 +28,7 @@ import java.util.List;
 public class Let46 {
 
     public static void main(String[] args) {
-        int[] nums = new int[]{1, 2, 3, 4, 5, 6, 7};
+        int[] nums = new int[]{1, 2, 3, 4};
         List<List<Integer>> permuteList = permute(nums);
         System.out.println(permuteList);
     }
